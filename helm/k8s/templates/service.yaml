@@ -6,6 +6,6 @@ spec:
   type: {{ .Values.service.type }}
   ports:
     - port: {{ .Values.service.port }}
-      nodePort: {{ .Values.service.nodePort }}
+      targetPort: {{ .Values.service.targetPort }}
   selector:
     {{- include "k8s.selectorLabels" . | nindent 4 }}
