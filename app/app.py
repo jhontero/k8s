@@ -21,7 +21,7 @@ def health():
 @app.route("/")
 def index():
     """Endpoint principal del microservicio."""
-    return jsonify({"message": "Microservicio modificado K8S - Universidad de La Sabana"})
+    return jsonify({"message": "Microservicio K8S - Universidad de La Sabana"})
 
 
 if __name__ == "__main__":
