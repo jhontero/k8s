@@ -8,7 +8,7 @@ def health():
 
 @app.route("/")
 def index():
-    return jsonify({"message": "Microservicio K8S - Universidad de La Sabana"})
+    return jsonify({"message": "Microservicio modificado K8S - Universidad de La Sabana"})
 
 if __name__ == "__main__":
     app.run(host="0.0.0.0", port=5000)
